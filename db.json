@@ -1,42 +1,6 @@
 {
   "projects": [
     {
-      "id": "4224",
-      "name": "Projeto",
-      "budget": "20000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 19000,
-      "services": [
-        {
-          "name": "Construção de uma Landing Page",
-          "cost": "7000",
-          "description": "Criar uma pagina simples de landing page para um restaurante",
-          "id": "48db9b88-c034-4434-9821-110b07579083"
-        },
-        {
-          "name": "Desenvolver o modo financeiro da página.",
-          "cost": "3000",
-          "description": "Construção do módulo de financiamento do sistema.",
-          "id": "68c192d3-084e-4c4f-976e-397ae5ccf578"
-        },
-        {
-          "name": "Backend da página",
-          "description": "Criando o backend da minha landing page",
-          "cost": "6000",
-          "id": "d924cb9c-bf38-46e1-950b-6ee0ea4049c4"
-        },
-        {
-          "name": "Netflix",
-          "cost": "3000",
-          "description": "Criar o banco",
-          "id": "b5b0ec7b-dced-4d1f-9886-4459886eefea"
-        }
-      ]
-    },
-    {
       "id": "630a",
       "name": "Netflix",
       "budget": "2000",
