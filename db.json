@@ -3,12 +3,12 @@
     {
       "id": "4224",
       "name": "Projeto",
-      "budget": "16000",
+      "budget": "20000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 16000,
+      "cost": 19000,
       "services": [
         {
           "name": "Construção de uma Landing Page",
@@ -27,8 +27,25 @@
           "description": "Criando o backend da minha landing page",
           "cost": "6000",
           "id": "d924cb9c-bf38-46e1-950b-6ee0ea4049c4"
+        },
+        {
+          "name": "Netflix",
+          "cost": "3000",
+          "description": "Criar o banco",
+          "id": "b5b0ec7b-dced-4d1f-9886-4459886eefea"
         }
       ]
+    },
+    {
+      "id": "630a",
+      "name": "Netflix",
+      "budget": "2000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": []
     }
   ],
   "categories": [

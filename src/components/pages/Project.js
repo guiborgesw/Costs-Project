@@ -15,12 +15,12 @@ import ServiceCard from '../service/ServiceCard'
 function Projects() {
     const { id } = useParams()
 
-    const [ project, setProject ] = useState ([])
+    const [ project, setProject ] = useState({})
     const [ services, setServices ] = useState ([])
-    const [showProjectForm, setShowProjectForm] = useState (false)
-    const [showServiceForm, setShowServiceForm] = useState (false)
-    const [message, setMessage] = useState()
-    const [type, setType] = useState()
+    const [ showProjectForm, setShowProjectForm ] = useState (false)
+    const [ showServiceForm, setShowServiceForm ] = useState (false)
+    const [ message, setMessage ] = useState()
+    const [ type, setType ] = useState()
 
     useEffect (() => {
         setTimeout (() => {
@@ -94,8 +94,12 @@ function Projects() {
             body: JSON.stringify(project)
         }).then((resp) => resp.json())
         .then((data) => {
+            setProject(data)         // ← ATUALIZA O PROJETO
+            setServices(data.services) // ← ATUALIZA A LISTA DE SERVIÇOS
             //fechar automático a aba de adicionar novo serviço após um serviço ser adicioando.
-            setShowServiceForm(false) 
+            setShowServiceForm(false)
+            setMessage('Serviço adicionado com sucesso!')
+            setType('success')
         })
         .catch(err => console.log(err))
 
